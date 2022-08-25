@@ -1,0 +1,20 @@
+<h2>Propery binding</h2>
+
+<button type="button" [disabled]="checkedDisabled" class="btn btn-primary">
+    Primary</button>
+
+<h2>Event Binding</h2>
+<button type="button" (click)="alertainfo($event)" class="btn btn-primary">Evento de clique</button>
+<div (mousemove)="mousemoveevent($event)" style="background-color: red; width: 300px; height:300px"></div>
+{{position.x}} {{position.y}}
+<br>
+<br>
+<hr>
+
+<h2>TWO WAY Binding</h2>
+<input [(ngModel)]="nome">
+{{nome}}
+
+<br>
+<br>
+<hr>
