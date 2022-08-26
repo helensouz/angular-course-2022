@@ -1,0 +1,53 @@
+<!-- <h2>Ng Class</h2>
+
+<p [ngClass]="{'active': valor, 'disabled': valor}">ng class</p>
+
+<br>
+<br>
+<hr>
+
+<h2>Ng Style</h2>
+<p [ngStyle]="{'height': height, 'background': backgroundColor}">ng class</p>
+
+<br>
+<br>
+<hr>
+
+<h2>ng Model</h2>
+<input [(ngModel)]="nome">{{nome}} -->
+<!-- 
+<br>
+<br>
+<hr>
+
+<ng-template ngFor let-item [ngForOf]="list"> 
+    <p>
+        {{item.nome}}
+    </p>
+</ng-template>
+<input [(ngModel)]="nome">
+<button class="btn btn-light"(click)="salvar()">Salvar</button>
+<button class="btn btn-danger"(click)="remover()">Remover</button> -->
+
+
+
+
+
+
+
+
+
+
+
+
+<br>
+<br>
+<hr>
+<h2>Pipes</h2>
+
+<input [(ngModel)]="nome">
+<button class="btn btn-light"(click)="salvar()">Salvar</button>
+<button class="btn btn-danger"(click)="remover()">Remover</button> 
+
+<li *ngFor="let item of list">{{item.nome | uppercase}}</li>
+

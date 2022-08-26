@@ -1,4 +1,26 @@
-<p *ngIf="condicao; else elseBlock">heloo</p>
-<ng-template #elseBlock>
-    <p>false</p>
-</ng-template>
+<h2>Ng for</h2>
+
+<ul>
+    <li *ngFor="let item of list">{{item.nome}}</li>
+</ul>
+
+<button class="btn btn-light" (click)="onClickAdd()">Adicionar</button> 
+<button class="btn btn-danger" (click)="onClickRemove()">Remover</button>
+
+<br>
+<br>
+<hr>
+<h2>NG SWITCH</h2>
+
+<div [ngSwitch]="nome">
+    <input type="text" [(ngModel)]="nome">
+    <p *ngSwitchCase="'helen'">
+        helen
+    </p>
+    <p *ngSwitchCase="'souza'">
+        souza
+    </p>
+    <p *ngSwitchDefault>
+        busca falha
+    </p>
+</div>
