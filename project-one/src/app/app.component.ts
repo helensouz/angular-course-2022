@@ -9,7 +9,11 @@ export class AppComponent implements OnInit {
  
     public destruir:boolean = true;
     
-    
+    public getDados: {nome: string, idade: number} | undefined
+
+  public addValue: number = 0
+
+ 
 
   constructor(){
   }
@@ -17,6 +21,16 @@ export class AppComponent implements OnInit {
   ngOnInit(): void{
     
   }
+
+  public add(){
+    this.addValue += 1  
+   
+  }
+   public setDados(event: {nome: string, idade: number}){
+    this.getDados = event
+   }
+
+
 
   public destruirComponente(){
     this.destruir = false

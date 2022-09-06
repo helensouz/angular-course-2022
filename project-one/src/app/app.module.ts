@@ -7,6 +7,8 @@ import { DataBindingComponent } from './data-binding/data-binding.component';
 import { FormsModule } from '@angular/forms';
 import { DiretivasEstruturaisComponent } from './diretivas-estruturais/diretivas-estruturais.component';
 import { DiretivasAtributosComponent } from './diretivas-atributos/diretivas-atributos.component';
+import { SharedModule } from './shared/shared.module';
+import { NewComponentComponent } from './shared/new-component/new-component.component';
 
 @NgModule({
   declarations: [
@@ -14,12 +16,14 @@ import { DiretivasAtributosComponent } from './diretivas-atributos/diretivas-atr
     TitleComponent,
     DataBindingComponent,
     DiretivasEstruturaisComponent,
-    DiretivasAtributosComponent
+    DiretivasAtributosComponent,
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    SharedModule
   ],
+
   providers: [],
   bootstrap: [AppComponent]
 })
